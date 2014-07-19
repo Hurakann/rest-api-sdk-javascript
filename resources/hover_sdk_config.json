@@ -1,0 +1,15 @@
+{
+	"http_connection_timeout":"HTTP Hover Connection Config", 
+	"http_connection_timeout":5000,
+	"http_connection_readtimeout":30000,
+	
+	"http_endpoint":"Hover Endpoint",
+	"http_endpoint":"http://127.0.0.1:8081",
+	
+	"clientID":"Hover Credentials",
+	"clientID":"EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM",
+	"clientSecret":"EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM",
+	
+	"tenantID":"Tenant",
+	"tenantID":"EJHUJ673FT3AE1GGBAK"
+}
