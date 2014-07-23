@@ -219,8 +219,7 @@ function UserMergeResource(){
 UserMergeResource.prototype = {
 	
 	/**
-     * Reset the password of the user account in the Hover system using Hover API, the next attributes
-     * must be required, not null or empty.
+     *  Merge users for avoid duplicates, selecting by similiarities, one of the user must be the main user, the rest of users are merge. If a user is not merge with another then the state of merge is free. All data are required.
      * 
      *  - branch_id
      *  - main_user_id:
@@ -236,8 +235,7 @@ UserMergeResource.prototype = {
 	},
 	
 	/**
-     * Reset the password of the user account in the Hover system using Hover API, the next attributes
-     * must be required, not null or empty.
+	 *	You can use this resource to change the main user in a group of merged users, for delete or append a user in the same group. The only optional data is:
      * 
      *  - new_main_user_id: The new main user of the merge group
      * 
@@ -251,7 +249,7 @@ UserMergeResource.prototype = {
 	},
 
 	/**
-     * Reset the password of the user account in the Hover system using Hover API, the next attributes
+     * To obtain the merge users information in the Hover system using Hover API, the next attributes
      * must be required, not null or empty.
      * 
      *  - user_id: The main user id of the merge group
@@ -386,7 +384,7 @@ UserSearchResource.prototype = {
 /**************************************** TAGS RESOURCE ****************************************/
 
 function UserTagsResource(){
-	this.URI = "/v1/user/tags";
+	this.URI = "/user/tags";
 	
 	this.CTYPE = "application/json";
 }

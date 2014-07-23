@@ -43,7 +43,43 @@ Utility.SDKUtilities =
 						newObj[property] = value[property];
 					
 		return newObj;
+	},
+
+	getNewProperties: function( object, type ){
+		var tot_class = this.objectSize(type);
+		var cont = 0;
+		var newObj = {};
+		for( var property in object ){
+			cont = 0;
+
+			if( typeof object[property] !== 'function' )
+				for( var nativeProperty in type )
+					if( typeof type[nativeProperty] !== 'function' ){
+						if( nativeProperty == property )
+							newObj[property] = object[property]; 
+						else
+							cont++;
+
+						if( cont == tot_class )
+							newObj["_"+property] = object[property];
+					}
+		}
+
+		return newObj;
+	},
+
+	objectSize: function( object ) {
+	    var size = 0;
+	    for (var property in object) {
+	    	if( typeof object[property] !== 'function' )
+	       		{
+	       			console.log(property);
+	       			size++;
+	       		}
+	    }
+	    return size;
 	}
+
 };
 
 /**

@@ -17,34 +17,35 @@
 
 function User()
 {
-	var branch_id 	= "";
-    var name 		= "";
-    var lastname 	= "";
-    var lastname2	= "";
-    var gender		= "";
-    var birthday 	= "";
-    var phase 		= "";
-    var coloruser 	= "";
-    var language 	= "";
-    var profile_id = "";
-    var user_id 	= "";
+	this.branch_id 	= "";
+    this.name 		= "";
+    this.lastname 	= "";
+    this.lastname2	= "";
+    this.gender		= "";
+    this.birthday 	= "";
+    this.phase 		= "";
+    this.coloruser 	= "";
+    this.language 	= "";
+    this.profile_id = "";
+    this.user_id 	= "";
 }
 
 User.prototype = {
-	
+	/**
+     * @return the name
+     */
 	setPropertie: function( key, value ){ this[key] = value; },
 	
 	getPropertie:function( propertie ){ return this[propertie]; }	
 };
 
 function UserSearch(){
-    this.name;
-    this.lastname;
-    this.lastname2;
-    //var merge;
-    this.phase;
-    this.profile_id;
-    this.broot;
+    var name;
+    var lastname;
+    var lastname2;
+    var phase;
+    var profile_id;
+    var broot;
 }
 
 UserSearch.prototype = {

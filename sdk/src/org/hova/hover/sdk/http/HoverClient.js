@@ -180,7 +180,7 @@ ClientPUT.prototype = {
 
 function ConnectionClient( method, uri, ctype, body, isAsync, sendParams, callback ){
 	var HOST = ( !sendParams )?SDKModel.getInstance().getHttp_endpoint()+uri+body:SDKModel.getInstance().getHttp_endpoint()+uri;
-	//alert(HOST+ctype+method);
+	
 	var sendResponse = false;
 		var conn;
 		
@@ -201,7 +201,7 @@ function ConnectionClient( method, uri, ctype, body, isAsync, sendParams, callba
 		conn.onreadystatechange = function()
 		{
 			console.log(conn.readyState+":"+conn.statusText);
-			console.log( "HEADERS"+conn.getAllResponseHeaders() );
+
 			switch( conn.readyState )
 			{
 				case 1:
@@ -286,10 +286,9 @@ function ConnectionClient( method, uri, ctype, body, isAsync, sendParams, callba
 			console.log("Exception");
 		   conn.abort();
 		   throw new ConnectionTimeoutException( "Request timeout expired" );
-		   //throw new Exception("ConnectionTimeoutException","Request timeout expired")
 		}, SDKModel.getInstance().getHttp_connection_timeout() );
 		
-		alert( HOST );
+		console.log( HOST );
 		( sendParams )?conn.send( body ):conn.send( null );
 		
 		if( callback === null )
@@ -368,7 +367,7 @@ UserAlreadyAssignedInServiceException.prototype.constructor = UserAlreadyAssigne
 function ConnectionTimeoutException( message ) { 
 	this.name = "ConnectionTimeoutException"; 
 	this.message = (message || ""); 
-	//this.stack = (new Error()).stack; 
+	this.stack = (new Error()).stack; 
 	console.log(this); 
 } 
 ConnectionTimeoutException.prototype = Error.prototype;
