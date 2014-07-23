@@ -1,0 +1,16 @@
+{
+  "author": "The Hover",
+  "name": "thehover-rest-sdk",
+  "description": "SDK Bindings for Javascript (Node JS)",
+  "repository":{
+    "url":"https://github.com/TheHover/rest-sdk-api-javascript.git"
+  },
+  "version": "0.1.0",
+  "main": "./index.js",
+  "scripts": {
+    "blanket": {
+      "pattern": "thehover-rest-sdk.js"
+    }
+  },
+  "readmeFilename": "README.md"
+}
