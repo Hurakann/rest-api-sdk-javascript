@@ -3,52 +3,37 @@ rest-api-sdk-javascript
 
 Hover API Rest SDK for JavaScript
 
-Welcome to the Hover SDK for JavaScript, this SDK is for building a robust JavaScript application based on the Hover API. The Hover SDK for JavaScript makes it easy to integrate a full Hover API services into javascript apps. 
+Welcome to the Hover SDK for JavaScript, this SDK is for building a robust JavaScript application based on the Hover API. The Hover SDK for JavaScript makes it easy to integrate a full Hover API services into javascript (NodeJS) apps. 
 
 SDK Integration
 ===============
 
-Add this sdk source in the root of your project.
+In order to integrate the SDK into your node.js project follow the next steps:
 
-SDK Configuration
-=================
-The configuration for this sdk is based in a json file where you must provide:
+* Add dependency 'thehover-rest-sdk' to your `package.json` file.
 
-* HTTP parameters
-* Tenant configuration
-* Credentials
+* Require 'thehover-rest-sdk' in your script
 
-You only need to call the instance and invoke the inizialize method of the class, for example:
+	```javascript
+		var thehover_sdk = require('thehover-rest-sdk');
+	```
+	
+* Configure SDK, by providing the required parameters (endpoint, port, version)
 
-	var sdkModel = SDKModel.getInstance();
-	sdkModel.initialize();
+	```javascript
+		thehover_sdk.configure({'endpoint':'thehover-api.com', 'port':'80'});
+	```
+	
+* Invoke API
 
-Manage the request
-===================
+	```javascript
+		thehover_sdk.profiles.fetch(profile, function(error, cb) {
+        	    if (error) {
+                 	console.log(error);
+                	throw error;
+        	    } else {
+                	console.log('Received response: ' + cb.response);
+        	});
+	```
 
-All requests to the RESTful API on the SDK are made using a serialized class, so, each request has their own translation from json to class, for example: to register a single user use User class and its attributes instead build a json file.
 
-Manage the response
-======================
-
-All responses from the RESTful API on the SDK are managed by Response class, this class stores the HTTP Status Code, the raw response (json, xml, etc ...)  as a string and the body response casted to a desired class
-
-Registering a user
-------
-Shows how to register an user using the default fields and extending of your own user settings
-
-Getting user info
-------
-Shows how to get information about the registered user
-
-Login 
-------
-Shows how to login an user using username, password, nfc and/or fingerprint
-
-Assign services to the user
-------
-Shows how to assign services to the user
-
-Get services for the user
-------
-Shows how to get services assigned to the user
