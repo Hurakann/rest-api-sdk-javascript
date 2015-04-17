@@ -4,15 +4,15 @@
   "description": "SDK Bindings for Javascript (Node JS)",
   "repository":{
     "type": "git",
-    "url":"https://github.com/TheHover/rest-sdk-api-javascript.git"
+    "url":"https://github.com/TheHover/rest-api-sdk-javascript.git"
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./index.js",
   "scripts": {},
   "bugs": {
-    "url": "https://github.com/TheHover/rest-sdk-api-javascript/issues"
+    "url": "https://github.com/TheHover/rest-api-sdk-javascript/issues"
   },
-  "homepage": "https://github.com/TheHover/rest-sdk-api-javascript",
+  "homepage": "https://github.com/TheHover/rest-api-sdk-javascript",
   "keywords": [
     "thehover",
     "sdk", "api"
