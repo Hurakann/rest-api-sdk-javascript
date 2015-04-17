@@ -21,7 +21,7 @@ In order to integrate the SDK into your node.js project follow the next steps:
 * Configure SDK, by providing the required parameters:
 
 	```javascript
-		thehover_sdk.configure({'endpoint':'thehover-api.com', 
+		thehover_sdk.configure({'endpoint':'127.0.0.1', 
 					'port':'80',
 					'api-version':'v1',
 					'ckey':'your-ckey'});
