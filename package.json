@@ -1,4 +1,5 @@
 {
+
   "author": "The Hover Cloud Programming Engine Inc",
   "name": "thehover-rest-sdk",
   "description": "SDK Bindings for Javascript (Node JS)",
@@ -6,11 +7,15 @@
     "type": "git",
     "url":"https://github.com/TheHover/rest-api-sdk-javascript.git"
   },
-  "version": "0.1.3",
+  "version": "0.1.7",
   "main": "./index.js",
   "scripts": {},
+  "directories": { "lib": "./lib" },
   "bugs": {
     "url": "https://github.com/TheHover/rest-api-sdk-javascript/issues"
+  },
+  "dependencies": {
+      "form-data": "*"
   },
   "homepage": "https://github.com/TheHover/rest-api-sdk-javascript",
   "keywords": [
@@ -20,5 +25,5 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "man": "README.md",
-  "files": [ "README.md" ]
+  "files": [ "README.md", "index.js", "lib" ]
 }
