@@ -49,6 +49,45 @@ In order to integrate the SDK into your node.js project follow the next steps:
                 	console.log('Received response: ' + cb.response);
         	});
 	```
+* Function Index
+
+Function | Parameters | Doc
+-------- | ---------- | --- 
+**[version](#version)** | none | returns sdk version
+**[configure](#configure)** | options - a json with configurable options for the sdk | configure env for sdk
+**[profiles.create](#profilescreate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#profiles)
+**[profiles.update](#profilesupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#profiles)
+**[profiles.fetch](#profilesfetch)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#profiles)
+**[users.create](#userscreate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#user)
+**[users.update](#usersupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#user)
+**[users.fetch](#usersfetch)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#user)
+**[users.link_action](#userslinkaction)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#useraction)
+**[users.fetch_action](#usersfetchaction)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#useraction)
+**[search.find](#search)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#search)
+**[search.ql](#searchthql)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usersearchthql)
+**[userAvailability.check](#checkavail)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#useravailability)
+**[userIsColor.check](#checkcolor)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usercolor)
+**[userLogin.login](#login)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#userlogin)
+**[userLogin.loginChangePassword](#checkpasswordlogin)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#userloginchangepassword)
+**[userMerge.create](#mergecreate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usermerge)
+**[userMerge.update](#mergeupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usermerge)
+**[userMerge.fetch](#mergefetch)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usermerge)
+**[userNotification.create](#notificationcreate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernotifications)
+**[userNotification.update](#notificationupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernotifications)
+**[userNotification.fetch](#notificationfetch)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernotifications)
+**[userNotification.fetchById](#notificationfetchbyid)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernotifications)
+**[userTags.create](#tagscreate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usertags)
+**[userTags.update](#tagsupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usertags)
+**[userTags.fetch](#tagsfetch)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usertags)
+**[userNFC.assign](#nfcassing)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernfccard)
+**[userNFC.update](#nfcupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernfccard)
+**[userNFC.fetch](#nfcfetch)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#usernfccard)
+**[userNFC.find](#nfcfind)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#searchnfc)
+**[groups.create](#groupcreate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#groups)
+**[groups.update](#groupupdate)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#groups)
+**[groups.fetch](#search)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#groups)
+**[file.updload](#fileupload)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#userfile)
+**[file.fetch](#filedownload)** | req_data - json, callback - function to return response | [API](http://docs.hoverapi.apiary.io/#userfile)
 
 About
 =====
