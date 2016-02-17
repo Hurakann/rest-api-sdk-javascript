@@ -88,6 +88,9 @@ Function | Parameters
 **[groups.fetch](http://docs.hoverapi.apiary.io/#groups)** | req_data - json, callback - function to return response
 **[file.updload](http://docs.hoverapi.apiary.io/#userfile)** | req_data - json, callback - function to return response
 **[file.fetch](http://docs.hoverapi.apiary.io/#userfile)** | req_data - json, callback - function to return response
+**[geospatial.store](http://docs.hoverapi.apiary.io/#reference/geospatial)** | req_data - json, callback - function to return response
+**[geospatial.update](http://docs.hoverapi.apiary.io/#reference/geospatial)** | req_data - json, callback - function to return response
+**[geospatial.filter](http://docs.hoverapi.apiary.io/#reference/geospatial)** | req_data - json, callback - function to return response
 
 About
 =====
