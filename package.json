@@ -7,7 +7,7 @@
     "type": "git",
     "url":"https://github.com/TheHover/rest-api-sdk-javascript.git"
   },
-  "version": "0.1.12",
+  "version": "0.2.0",
   "main": "./index.js",
   "scripts": {},
   "directories": { "lib": "./lib" },
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/TheHover/rest-api-sdk-javascript",
   "keywords": [
     "thehover",
-    "sdk", "api"
+    "sdk", "api", "query language"
   ],
   "license": "MIT",
   "readmeFilename": "README.md",
