@@ -92,6 +92,13 @@ Function | Parameters
 **[metric.create](http://docs.hoverapi.apiary.io/#useraction)** | req_data - json, callback - function to return response
 **[metric.fetch](http://docs.hoverapi.apiary.io/#useraction)** | req_data - json, callback - function to return response
 
+* Function Deprecated Index
+
+Function | Parameters
+-------- | ----------
+**[metric.create_backward_compat] (https://jsapi.apiary.io/previews/hoverapi/reference/metrics/write)** | req_data - json, callback - function to return response, it uses a deprecated /user/action
+**[metric.fetch_backward_compat] (https://jsapi.apiary.io/previews/hoverapi/reference/metrics/write)** | req_data - json, callback - function to return response, it uses a deprecated /user/action
+
 About
 =====
 
