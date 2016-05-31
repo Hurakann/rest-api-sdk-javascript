@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/TheHover/rest-api-sdk-javascript.git"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "./index.js",
   "scripts": {},
   "directories": {
